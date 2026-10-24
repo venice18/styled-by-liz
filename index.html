@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Styled by Liz | Hairstylist in Kutus</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%92%9C%3C/text%3E%3C/svg%3E"><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&display=block" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script src="tailwind-config.js"></script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary min-h-screen flex flex-col justify-between">
+<header class="fixed top-0 w-full z-50 bg-[#0D0D0D]/95 backdrop-blur-md shadow-md transition-all duration-300">
+<div class="h-20 w-full max-w-[1200px] mx-auto px-6 lg:px-12 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="relative flex items-center justify-center"><img alt="Styled by Liz Logo" class="h-10 w-10 object-contain rounded-full ring-1 ring-[#F1E6F7]/20 group-hover:scale-105 transition-transform duration-300" src="images/logo.jpg"/></div>
+<div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-[#FFFFFF] tracking-tight font-semibold">Styled by Liz</span><span class="font-label-sm text-label-sm text-[#F1E6F7]/60 uppercase tracking-widest">Your own hairstylist</span></div>
+</a>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="font-label-lg text-label-lg text-[#F1E6F7]/80 hover:text-[#FFFFFF] transition-colors" href="#services">Services</a>
+<a class="font-label-lg text-label-lg text-[#F1E6F7]/80 hover:text-[#FFFFFF] transition-colors" href="#gallery">Gallery</a>
+<a class="font-label-lg text-label-lg text-[#F1E6F7]/80 hover:text-[#FFFFFF] transition-colors" href="#about">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="hidden sm:inline-flex items-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-6 py-2.5 rounded-full shadow-md transition-all" href="https://wa.me/254724074189?text=Hello%20Liz,%20I'd%20like%20to%20book%20a%20hair%20appointment" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Book on WhatsApp</span></a>
+<button id="menuBtn" aria-label="Open Mobile Navigation" class="lg:hidden flex items-center justify-center text-[#FFFFFF] p-2 hover:bg-[#FFFFFF]/10 rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-2xl">menu</span></button>
+</div>
+</div>
+<nav id="mobileNav" class="hidden lg:hidden bg-[#0D0D0D] px-6 pb-4 flex-col font-label-lg">
+<a href="#services" class="py-3 text-[#F1E6F7] border-b border-white/10">Services</a>
+<a href="#gallery" class="py-3 text-[#F1E6F7] border-b border-white/10">Gallery</a>
+<a href="#about" class="py-3 text-[#F1E6F7] border-b border-white/10">About</a>
+</nav>
+</header>
+<main class="w-full pt-20 bg-surface flex-1"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO (Dark luxury velvet black #0D0D0D) -->
+<section class="relative w-full bg-[#0D0D0D] text-on-primary overflow-hidden">
+<!-- Subtle Ambient Orchid Glows -->
+<div class="max-w-[1200px] mx-auto px-6 lg:px-12 py-16 lg:py-24 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Hero Column -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#1b1b1e] border-none shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></span>
+<span class="font-script-accent text-script-accent text-primary-fixed-dim italic">Hair that tells your story</span>
+</div>
+<div class="space-y-3">
+<h1 class="font-display text-display text-[#FFFFFF] tracking-tight leading-tight">
+              Styled by <span class="text-primary-fixed-dim drop-shadow-md">Liz</span>
+</h1>
+<p class="font-body-lg text-body-lg text-[#F1E6F7]/85 max-w-xl leading-relaxed">
+              Braids, precision styling &amp; luxury hair care. Unwind at my serene private home studio in Kutus, or experience VIP hair styling delivered directly to your doorstep.
+            </p>
+</div>
+<!-- Dual CTA Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-3 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg px-8 py-3.5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0" href="https://wa.me/254724074189?text=Hi%20Liz,%20I'd%20like%20to%20book%20an%20appointment" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Book on WhatsApp</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-[#FFFFFF] font-label-lg text-label-lg px-7 py-3.5 rounded-full backdrop-blur-md transition-all" href="#gallery">
+<span>View My Work</span>
+<span class="material-symbols-outlined text-[18px]">south</span>
+</a>
+</div>
+</div>
+<!-- Right Hero Column (Portrait Feature) -->
+<div class="lg:col-span-5 relative flex justify-center">
+<div class="relative w-full max-w-[420px]">
+<!-- Decorative Accent Behind -->
+<div class="relative rounded-3xl overflow-hidden shadow-2xl bg-[#1b1b1e] aspect-[3/4]">
+<!-- HERO PHOTO: replace the whole <div class="photo-slot"> below with:
+<img alt="Braids by Styled by Liz" class="w-full h-full object-cover" src="images/hero-work.jpg"/> -->
+<img alt="Braids by Styled by Liz" class="w-full h-full object-cover" src="images/hero-work.jpg"/>
+<!-- Floating Glass Badge -->
+<div class="absolute bottom-5 inset-x-5 p-4 rounded-2xl bg-[#0D0D0D]/80 backdrop-blur-md shadow-xl flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim font-semibold">Signature Style</p>
+<p class="font-headline-sm text-headline-sm text-[#FFFFFF] font-medium leading-snug">Sasha Locs</p>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-[#F1E6F7]/70 block">Labour from</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed-dim font-bold">KSh 950</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: TWO WAYS TO EXPERIENCE LIZ (Warm off-white #FAF7FA) -->
+<section class="w-full bg-[#FAF7FA] py-20 px-6 lg:px-12">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+<span class="font-script-accent text-script-accent text-primary block">Convenience &amp; Comfort</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Two Ways to Book Your Session</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Whether you prefer a peaceful sanctuary or the ultimate comfort of your own living room, Liz crafts an elevated hair session designed around you.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<!-- Experience 1: Home Studio -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-6">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">spa</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Option 01</span>
+<span class="h-1 w-1 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-secondary">My Space</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3"></h3>Get Your Hair Done at My Place
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Come get your hair done in a relaxed, comfortable space where you can feel at home. Whether you're going for neat braids, locs, or a fresh new look. I'll make sure you leave feeling good and looking even better.
+              </p>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">One-on-one appointments(No crowded salon or unnecessary waiting)</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Neat braids, everytime</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">A chill, comfortable vibe. Relax, catch up and enjoy getting your hair done.</span>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-4 rounded-full shadow-md hover:shadow-lg transition-all" href="https://wa.me/254724074189?text=Hi%20Liz,%20I'd%20like%20to%20book%20a%20Studio%20Visit" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+<span>Book Your Appointment</span>
+</a>
+</div>
+</div>
+<!-- Experience 2: Mobile Service -->
+<div class="bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-6">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">airport_shuttle</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Option 02</span>
+<span class="h-1 w-1 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-secondary">Doorstep VIP Concierge</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">I Come To You (Mobile Hairdresser)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Too busy to leave the house? No worries, girl, I've got you! I'll come to your place so you can get your hair done in the comfort of your own space. Whether you're at home or have a busy schedule, you can still get those neat pretty braids you've been wanting.
+              </p>
+</div>
+<div class="space-y-3 pt-2">
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Your space, your comfort</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Convenient and stress-free(No need to travel or worry about getting to a salon)</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md">Travel fee depends on your location</span>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#0D0D0D] hover:bg-surface-tint text-[#FFFFFF] font-label-lg text-label-lg py-4 rounded-full shadow-md hover:shadow-xl transition-all" href="https://wa.me/254724074189?text=Hi%20Liz,%20I'd%20like%20to%20book%20Mobile%20Service%20to%20my%20location" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">home_pin</span>
+<span>Book Mobile Service</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CURATED MENU & PRICING (#FFFFFF) -->
+<section class="w-full bg-surface-container-lowest py-20 px-6 lg:px-12" id="services">
+<div class="max-w-[1200px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<span class="font-script-accent text-script-accent text-primary">Transparent Luxury</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Service Menu &amp; Rates</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          All prices are for labour only. For an all-inclusive price with the hair included, send an inquiry on WhatsApp.
+        </p>
+</div>
+<!-- Scalp Prep Banner -->
+<div class="bg-[#F1E6F7] rounded-2xl p-5 mb-12 flex flex-col sm:flex-row sm:items-center gap-4 shadow-sm">
+<span class="material-symbols-outlined text-primary text-2xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="font-body-sm text-body-sm text-on-surface font-medium leading-relaxed flex-1"><span class="font-bold text-primary">Prices are for labour only.</span> Want it all-inclusive, with the hair included? Make an inquiry for a full quote. A travel fee applies for home visits, depending on your location.</p>
+<a class="inline-flex items-center justify-center gap-2 bg-[#0D0D0D] hover:bg-black/80 text-[#FFFFFF] font-label-lg text-label-lg px-6 py-3 rounded-full transition-colors flex-shrink-0" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20an%20all-inclusive%20quote%20%28hair%20included%29%20for%20" rel="noopener noreferrer" target="_blank"><span>Inquire on WhatsApp</span></a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Knotless</span><span class="material-symbols-outlined text-primary text-2xl">style</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Knotless Boho Braids</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Knotless braids with soft, free-flowing curls for a pretty boho finish.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 750</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Knotless%20Boho%20Braids" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Knotless</span><span class="material-symbols-outlined text-primary text-2xl">style</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Loose Knotless Braids</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Relaxed knotless braids with a softer, looser look.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 700</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Loose%20Knotless%20Braids" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Knotless</span><span class="material-symbols-outlined text-primary text-2xl">style</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Normal Knotless Braids</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Classic, neat knotless braids. A timeless protective style.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 600</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Normal%20Knotless%20Braids" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Maintenance</span><span class="material-symbols-outlined text-primary text-2xl">autorenew</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Retouch / Retie</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Refresh your braids or re-tie your style to keep it neat.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 450</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Retouch%20%2F%20Retie" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Locs</span><span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Sasha Locs Installation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Sasha locs installed neatly for a bold, long-lasting protective style.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 950</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Sasha%20Locs%20Installation" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Twists</span><span class="material-symbols-outlined text-primary text-2xl">spa</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Marley Twist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Marley twists for a textured, natural-looking protective style.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 900</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Marley%20Twist" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Natural Hair</span><span class="material-symbols-outlined text-primary text-2xl">water_drop</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Twistouts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Defined twistouts for natural hair. Price depends on your hair type.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 350 – 500</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724087189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Twistouts" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Twists</span><span class="material-symbols-outlined text-primary text-2xl">spa</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Coco Twist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Coco twists styled neatly for a soft, textured look.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 700</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Coco%20Twist" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Knots</span><span class="material-symbols-outlined text-primary text-2xl">diamond</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Miracle Knots</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">A neat protective style finished with miracle knots.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 700</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Miracle%20Knots" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="bg-[#FAF7FA] rounded-2xl p-6 flex flex-col justify-between gap-5 shadow-sm hover:shadow-md transition-shadow">
+<div class="space-y-3">
+<div class="flex justify-between items-start"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold bg-primary-fixed px-3 py-1 rounded-full">Crochet</span><span class="material-symbols-outlined text-primary text-2xl">face_3</span></div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Crochet</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Crochet styles installed neatly, ready to wear.</p>
+<div class="pt-2 flex items-baseline justify-between border-t border-black/10"><span class="font-body-sm text-body-sm text-secondary">Labour only</span><span class="font-headline-md text-headline-md text-primary font-bold">KSh 800</span></div>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg py-3 rounded-full transition-colors" href="https://wa.me/254724074189?text=Hi%20Liz%2C%20I'd%20like%20to%20book%20Crochet" rel="noopener noreferrer" target="_blank"><span>Book This Style</span><span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: LOOKBOOK / GALLERY -->
+<section class="w-full bg-[#FAF7FA] py-20 px-6 lg:px-12" id="gallery">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center max-w-xl mx-auto mb-10 space-y-2">
+<span class="font-script-accent text-script-accent text-primary">Artistry in Motion</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The Liz Lookbook</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Neat parts, beautiful finishes, and styles made to last.</p>
+</div>
+<!-- Filter Pills -->
+<div class="flex items-center justify-center flex-wrap gap-2.5 mb-12" id="gallery-filters">
+<button class="px-5 py-2 rounded-full font-label-lg text-label-lg bg-[#0D0D0D] text-[#FFFFFF] shadow-sm transition-all" type="button">All Looks</button>
+<button class="px-5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-black/10 transition-all" type="button">Braids</button>
+<button class="px-5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-black/10 transition-all" type="button">Locs</button>
+<button class="px-5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-black/10 transition-all" type="button">Twists</button>
+<button class="px-5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-black/10 transition-all" type="button">Natural Hair</button>
+<button class="px-5 py-2 rounded-full font-label-lg text-label-lg bg-surface-container-high text-on-surface hover:bg-black/10 transition-all" type="button">Crochet</button>
+</div>
+<!-- Visual Masonry Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Gallery Item 1. PHOTO: replace the <div class="photo-slot"> with <img alt="Knotless Braids" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-1.jpg"/> -->
+<div data-cat="Braids" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Knotless braids by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-1.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Knotless Braids</span></div>
+</div>
+<!-- Gallery Item 2. PHOTO: replace the <div class="photo-slot"> with <img alt="Knotless Boho Braids" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-2.jpg"/> -->
+<div data-cat="Braids" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Knotless braids by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-2.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Knotless Boho Braids</span></div>
+</div>
+<!-- Gallery Item 3. PHOTO: replace the <div class="photo-slot"> with <img alt="Sasha Locs" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-3.jpg"/> -->
+<div data-cat="Locs" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Knotless braids by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-3.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Sasha Locs</span></div>
+</div>
+<!-- Gallery Item 4. PHOTO: replace the <div class="photo-slot"> with <img alt="Marley Twist" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-4.jpg"/> -->
+<div data-cat="Twists" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Knotless braids by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-4.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Marley Twist</span></div>
+</div>
+<!-- Gallery Item 5. PHOTO: replace the <div class="photo-slot"> with <img alt="Twistouts" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-5.jpg"/> -->
+<div data-cat="Natural Hair" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Knotless braids by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-5.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Twistouts</span></div>
+</div>
+<!-- Gallery Item 6. PHOTO: replace the <div class="photo-slot"> with <img alt="Crochet" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-6.jpg"/> -->
+<div data-cat="Crochet" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Knotless braids by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-6.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Crochet</span></div>
+</div>
+<!-- Gallery Item 7. PHOTO: replace the <div class="photo-slot"> with <img alt="Crochet" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-6.jpg"/> -->
+<div data-cat="Braids" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Loose braids by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-7.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Loose Braids</span></div>
+</div>
+<!-- Gallery Item 8. PHOTO: replace the <div class="photo-slot"> with <img alt="Crochet" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-6.jpg"/> -->
+<div data-cat="Locs" class="gallery-item group relative rounded-2xl overflow-hidden aspect-[4/5] bg-surface-container shadow-md">
+<img alt="Retouch by Styled by Liz" class="absolute inset-0 w-full h-full object-cover" src="images/gallery-8.jpg"/>
+<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent p-6 text-on-primary"><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-fixed-dim">Retouch/Retie</span></div>
+</div>
+</div>
+<!-- Instagram Callout -->
+<div class="text-center pt-12">
+<a class="inline-flex items-center gap-3 bg-surface-container-lowest hover:bg-black/10 text-on-surface font-label-lg text-label-lg px-8 py-3.5 rounded-full shadow-md transition-all group" href="https://instagram.com/styled._by_liz" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-primary text-xl group-hover:scale-110 transition-transform">photo_camera</span>
+<span>Follow @styledbyliz on Instagram for Daily Transformations</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 5: MEET LIZ (#FAF7FA with split layout) -->
+<section class="w-full bg-[#FAF7FA] py-20 px-6 lg:px-12" id="about">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Photo Column -->
+<div class="lg:col-span-5 relative flex justify-center">
+<div class="relative w-full max-w-[420px]">
+<div class="relative rounded-3xl overflow-hidden shadow-xl bg-surface-container aspect-square">
+<img alt="Liz, hairstylist at Styled by Liz" class="w-full h-full object-cover" src="images/about.jpg"/>
+</div>
+<!-- Trust Badge Overlap -->
+<div class="absolute -bottom-5 -right-3 bg-surface-container-lowest px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">verified</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-secondary font-medium uppercase">Experience</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">2+ Years in Kutus</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Story Column -->
+<div class="lg:col-span-7 space-y-6">
+<span class="font-script-accent text-script-accent text-primary">The Hands Behind Your Crown</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Hello, I’m Liz.</h2>
+<div class="space-y-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<p>
+              I'm the girl behind Styled by Liz, and I love helping women feel beautiful and confident through their hair. For me, it's not just about getting your braids done. It's about the little details, the neat partings, and making sure you leave happy with your look.
+            </p>
+<p>
+              I know how important it is to feel comfortable while getting your hair done, so I always do my best to make every appointment a good experience. Whether you come to me in Kutus or I come to you, you'll get my full attention and care from start to finish.
+            </p>
+<p>
+              My goal is simple: to give you beautiful, neat hairstyles you'll love, while making your hair appointment as comfortable and stress-free as possible.
+            </p>            
+</div>
+<!-- Highlight Quote -->
+<blockquote class="bg-[#F1E6F7] p-6 rounded-2xl border-none shadow-sm">
+<p class="font-headline-sm text-headline-sm italic text-on-surface leading-snug">
+              “Every crown deserves gentle hands, attentive care, and a look that turns heads effortlessly.”
+            </p>
+</blockquote>
+<!-- Signature -->
+<div class="flex items-center justify-between pt-2">
+<div>
+<p class="font-script-accent text-3xl text-primary font-normal">Liz Ndiritu</p>
+<p class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Founder &amp; Lead Stylist</p>
+</div>
+<a class="inline-flex items-center gap-2 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg px-6 py-2.5 rounded-full transition-colors shadow-sm" href="https://wa.me/254724074189?text=Hi%20Liz,%20I'd%20like%20to%20chat%20about%20my%20hair%20needs" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Say Hello</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: WHY CLIENTS LOVE ME (4-Column Feature Row) -->
+<section class="w-full bg-surface-container-lowest py-20 px-6 lg:px-12">
+<div class="max-w-[1200px] mx-auto">
+<div class="text-center max-w-xl mx-auto mb-14 space-y-2">
+<span class="font-script-accent text-script-accent text-primary">Uncompromising Quality</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Why Clients Love Liz</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Elevating every appointment into an unhurried, restorative self-care ritual.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Feature 1 -->
+<div class="bg-[#FAF7FA] p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all space-y-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">pan_tool</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gentle Hands</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Zero tension headaches. Every braid, stitch, and pull is calibrated with delicate precision to safeguard your edges and scalp health.
+          </p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-[#FAF7FA] p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all space-y-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">sanitizer</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Quality Products</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            I use quality hair-care products to help achieve neat, beautiful braids while keeping your hair and scalp in mind.
+          </p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-[#FAF7FA] p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all space-y-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">schedule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Punctual Service</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Your time is treasured. Dedicated booking slots guarantee zero double-booking, no salon bench queues, and prompt arrivals.
+          </p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-[#FAF7FA] p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all space-y-4">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">auto_fix_high</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Custom Looks</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Personalized style recommendations crafted to complement your facial architecture, lifestyle routine, and personal aesthetic.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: BOOKING CTA BANNER (Rich Black #0D0D0D) -->
+<section class="w-full bg-[#0D0D0D] py-20 px-6 lg:px-12 relative overflow-hidden">
+<div class="max-w-[900px] mx-auto text-center space-y-6 relative z-10">
+<span class="font-script-accent text-script-accent text-primary-fixed-dim">Ready for your new look?</span>
+<h2 class="font-display text-display text-[#FFFFFF] tracking-tight">Reserve Your Crown Session Today</h2>
+<p class="font-body-lg text-body-lg text-[#F1E6F7]/85 max-w-2xl mx-auto leading-relaxed">
+        Weekend and evening slots fill fast. Tap the button below to message Liz directly on WhatsApp for immediate date confirmation, consultation, and exact studio directions.
+      </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 bg-[#A855D8] hover:bg-primary text-on-primary font-label-lg text-label-lg px-10 py-5 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1" href="https://wa.me/254724074189?text=Hi%20Liz,%20I'd%20like%20to%20book%20an%20appointment" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl">chat</span>
+<span class="font-bold">Book on WhatsApp (+254 724 074 189)</span>
+</a>
+</div>
+<p class="font-label-sm text-label-sm text-[#F1E6F7]/50 pt-2">Typical response time: under 15 minutes</p>
+</div>
+</section>
+<!-- SECTION 9: STUDIO LOCATION & WORKING HOURS (#FAF7FA) -->
+<section class="w-full bg-[#FAF7FA] py-16 px-6 lg:px-12" id="contact">
+<div class="max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Col 1: Location -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Appointment Location</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Kutus, Kerugoya, Kagio<br/>
+            Kirinyaga, Kenya
+          </p>
+<p class="font-label-sm text-label-sm text-primary font-medium">
+            Exact private pin &amp; gate instructions shared immediately upon booking confirmation.
+          </p>
+</div>
+<!-- Col 2: Hours -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">schedule</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Working Hours</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Monday – Saturday: 8:00 AM – 7:00 PM<br/>
+            Sunday: Rest day (closed)
+          </p>
+<p class="font-label-sm text-label-sm text-secondary font-medium">
+            Appointments are by booking. Message me on WhatsApp to reserve your slot.
+          </p>
+</div>
+<!-- Col 3: Direct Contact -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm space-y-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">contact_support</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Direct Contact</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            WhatsApp: +254 724 074 189<br/>
+            Email: ndirituliz34@gmail.com
+          </p>
+<a class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary hover:underline font-semibold pt-1" href="https://wa.me/254724074189?text=Hi%20Liz,%20I'd%20like%20to%20inquire%20about%20a%20slot" rel="noopener noreferrer" target="_blank">
+<span>Send Direct Message</span>
+<span class="material-symbols-outlined text-base">arrow_outward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive script for lookbook gallery filtering -->
+<section class="bg-[#FAF7FA] py-16 lg:py-20" id="policies">
+<div class="max-w-[1200px] mx-auto px-6 lg:px-12">
+<div class="text-center mb-10">
+<h2 class="font-headline-md text-headline-md text-3xl text-on-surface">Before You Book</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-3">A few simple things that help your appointment go smoothly.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+<div id="booking-terms" class="bg-[#FFFFFF] rounded-2xl p-8 shadow-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-5">Booking Terms</h3>
+<ul class="space-y-4 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span><span>Prices on this site are for <strong>labour only</strong>.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span><span>Want it all-inclusive, with the hair included? A deposit is needed to secure your booking. I’ll share the details on WhatsApp.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span><span>If you’ve paid a deposit and cancel within 10 hours to your appointment time, you’ll lose half of your deposit, unless you choose to reschedule instead.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span><span>Please arrive on time. If you’re more than 25 minutes late and haven’t let me know, we’ll need to reschedule your appointment. If you’re running behind, message me on WhatsApp.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">check_circle</span><span>For home visits, the travel fee depends on your location.</span></li>
+</ul>
+</div>
+
+<div id="appointment-etiquette" class="bg-[#FFFFFF] rounded-2xl p-8 shadow-sm">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-5">Appointment Etiquette</h3>
+<ul class="space-y-4 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">favorite</span><span>My studio is in my home, so I kindly ask you to come on your own. If your situation needs someone with you, just let me know when you book.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">favorite</span><span>Before your appointment, tell me your hair type and, if you can, send me a photo of your hair on WhatsApp so I can prepare properly.</span></li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-primary text-xl flex-shrink-0">favorite</span><span>Please arrive on time and message me if you’re running behind, so everyone’s day runs smoothly.</span></li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-[#0D0D0D] text-[#FAF7FA] pt-16 pb-12 mt-auto border-t border-[#F1E6F7]/10"><div class="w-full max-w-[1200px] mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12"><div class="md:col-span-2 space-y-4"><div class="flex items-center gap-3"><img alt="Styled by Liz Logo" class="h-9 w-9 object-contain rounded-full shadow-[0_0_10px_rgba(136,53,184,0.3)]" src="images/logo.jpg"/><span class="font-headline-md text-headline-md text-[#FFFFFF] tracking-tight">Styled by Liz</span></div><p class="font-body-md text-body-md text-[#F1E6F7]/70 max-w-md">Styled by Liz is all about beautiful braids, neat partings, and styles that make you feel confident. Enjoy a comfortable, personalized hair experience in Kutus or from the comfort of your own home.</p><div class="flex items-center gap-3 pt-2"><a aria-label="Instagram" class="w-9 h-9 rounded-full bg-[#1b1b1e] hover:bg-primary text-[#FFFFFF] flex items-center justify-center transition-colors shadow-sm" href="https://instagram.com/styled._by_liz" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-lg">photo_camera</span></a><a aria-label="Tiktok" class="w-9 h-9 rounded-full bg-[#1b1b1e] hover:bg-primary text-[#FFFFFF] flex items-center justify-center transition-colors shadow-sm" href="https://tiktok.com/@v_e_n.i_c_e" target="_blank" rel="noopener noreferrer"><span class="text-xs font-bold">TT</span></a><a aria-label="Facebook" class="w-9 h-9 rounded-full bg-[#1b1b1e] hover:bg-primary text-[#FFFFFF] flex items-center justify-center transition-colors shadow-sm" href="https://www.facebook.com/share/1GjjXvqNZv/" target="_blank" rel="noopener noreferrer"><span class="text-xs font-bold">FB</span></a><a aria-label="WhatsApp Studio" class="w-9 h-9 rounded-full bg-[#1b1b1e] hover:bg-[#25D366] text-[#FFFFFF] flex items-center justify-center transition-colors shadow-sm" href="https://wa.me/254724074189" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-lg">chat</span></a></div></div><div class="space-y-3"><h3 class="font-label-lg text-label-lg uppercase tracking-wider text-primary-fixed-dim font-semibold">Client Portals</h3><ul class="space-y-2.5"><li class="leading-none"><a class="font-body-md text-body-md text-[#F1E6F7]/75 hover:text-[#FFFFFF] transition-colors" href="#services">Service Menu &amp; Rates</a></li><li class="leading-none"><a class="font-body-md text-body-md text-[#F1E6F7]/75 hover:text-[#FFFFFF] transition-colors" href="#gallery">Lookbook &amp; Portfolio</a></li><li class="leading-none"><a class="font-body-md text-body-md text-[#F1E6F7]/75 hover:text-[#FFFFFF] transition-colors" href="#about">About Liz</a></li><li class="leading-none"></li></ul></div><div class="space-y-3"><h3 class="font-label-lg text-label-lg uppercase tracking-wider text-primary-fixed-dim font-semibold">Studio Hours</h3><p class="font-body-sm text-body-sm text-[#F1E6F7]/70">Monday – Saturday: 8:00 AM – 7:00 PM<br/>Sunday: Rest day (closed)</p><div class="pt-2"><p class="font-label-sm text-label-sm text-[#F1E6F7]/50 uppercase tracking-wider">Location</p><p class="font-body-sm text-body-sm text-[#F1E6F7]/85">Kutus, Kerugoya• Kirinyaga, Kenya</p></div></div></div><div class="pt-8 border-t border-[#F1E6F7]/10 flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-body-sm text-body-sm text-[#F1E6F7]/60 flex items-center gap-1.5"><span>© 2026 Styled by Liz Kutus. Crafted with</span><span class="material-symbols-outlined text-primary text-base inline-block align-middle">favorite</span><span>for bespoke beauty.</span></p><div class="flex items-center gap-6 font-label-sm text-label-sm text-[#F1E6F7]/60"><a class="hover:text-[#FFFFFF] transition-colors" href="#booking-terms">Booking Terms</a><a class="hover:text-[#FFFFFF] transition-colors" href="#appointment-etiquette">Appointment Etiquette</a></a></div></div></div></footer><script src="script.js"></script></body></html>

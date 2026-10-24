@@ -1,0 +1,15 @@
+/* Styled by Liz - custom styles (most styling is Tailwind classes in index.html) */
+@layer base{
+html,body{margin:0;padding:0;}
+body{overscroll-behavior:none;}
+main>:first-child{margin-top:0!important;}
+main>:last-child{margin-bottom:0!important;}
+}
+::-webkit-scrollbar{display:none;}
+html{scroll-padding-top:5.5rem}
+header{padding-top:env(safe-area-inset-top,0px)}
+main{padding-top:calc(5rem + env(safe-area-inset-top,0px))!important}
+footer{padding-bottom:calc(3rem + env(safe-area-inset-bottom,0px))!important}
+aside[aria-label]{bottom:calc(1.25rem + env(safe-area-inset-bottom,0px))!important}
+.gallery-item.hide{display:none}
+html:not(.icons-ready) .material-symbols-outlined { visibility: hidden; }
